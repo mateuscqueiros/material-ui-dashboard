@@ -1,14 +1,13 @@
-import { Button } from "@mui/material";
 import { useState } from "react";
-import "./App.css";
+import { AppProvider } from "./lib/provider";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <>
-      <Button variant="outlined">Botão</Button>
-    </>
+    <AppProvider>
+      <h1>Material Dashboard</h1>
+    </AppProvider>
   );
 }
 
